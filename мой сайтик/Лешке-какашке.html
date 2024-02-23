@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> наши с тобой любови</title>
+	<style>
+		body {
+			font-family: Courier New;
+			font-size: 50px;
+			margin: 0;
+			padding: 0;
+		}
+		button {
+			font-family: Courier New;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body background="file:///Users/user/Desktop/99c302deb665088aa0c4ace4f4b9108a.jpg">
+	<center>
+	<img src="file:///Users/user/Desktop/мяу.gif" width="600" height="400">
+</center>
+<center>
+		<p> ТЫ МЕНЯ ЛЮБИШЬ ?)</p>
+</center>
+<center>
+<button style="background-color:deeppink;height:100px;width:150px;" onmouseDown="alert('Я тебя тоже люблю, солнце)');parent.location='Лешке-какашке — копия.html'" value="Дя)">Дя)</button>
+<span id="button1" style="position:relative;z-index:10" onmouseOver="moveIt()" onfocus="moveIt();this.blur()">
+<button style="background-color:lightpink;height:100px; width:150px;" onmouseDown="moveIt()" onmouseover="moveIt()" onfocus="moveIt();this.blur()">Неть(</button>
+</span>
+</center>
+<script>
+function getObj(objID)
+{
+    if (document.getElementById) {return document.getElementById(objID);}
+    else if (document.all) {return document.all[objID];}
+    else if (document.layers) {return document.layers[objID];}
+}
+var ie4=document.all;
+var ns6=document.getElementById&&!document.all;
+cobj=getObj("button1");
+
+function moveIt(){
+y=Math.floor(Math.random()*301);
+x=Math.floor(Math.random()*401);
+if (ie4){
+	cobj.style.top  = y;
+	cobj.style.left = x;
+	}
+else if (ns6){
+	cobj.style.top  = y+"px";
+	cobj.style.left = x+"px";
+	}
+}
+</script>
+</body>
+</html>
